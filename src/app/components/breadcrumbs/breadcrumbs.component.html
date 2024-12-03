@@ -1,0 +1,16 @@
+<ul class="breadcrumb">
+
+    @for (route of allRoutes; track route.route)
+    {    
+
+        @if (route.route_type === 'start') { 
+            <li><a class="start" [href]="route.route">{{route.route_label}}</a></li> }
+        
+        @else if (route.route_type === 'inter') { 
+            <li><a class="inter" [href]="route.route">{{route.route_label}}</a></li> }
+        
+        @else if (route.route_type === 'current') { 
+            <li><a class="current" [href]="route.route">{{route.route_label}}</a></li> }
+    }
+
+</ul>

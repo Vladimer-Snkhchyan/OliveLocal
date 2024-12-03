@@ -1,0 +1,105 @@
+
+:host {
+  --table-main-font: Nunito Sans; 
+  --table-border-color:  rgba(171, 171, 171, 0.3);
+  --table-primary-color: rgba(0, 0, 0, 1);
+  --table-secondary-color: rgba(255, 255, 255, 1);
+
+    --mat-table-background-color: rgba(255, 255, 255, 0);;
+    --mat-app-elevation-shadow-level-8:1px 1px 0px 0px (--table-secondary-color) !important;
+    --mat-table-row-item-outline-color: var(--table-border-color:);
+    --mat-table-row-item-outline-width: 1px;
+    --mat-menu-item-label-text-font: var(--main-font);
+    --mat-app-label-large-font: var(--main-font)
+    
+  }
+  
+  
+  .table {
+    border: 1px solid var(--table-header-color);
+    border-radius: 8px;
+    margin: 5px;
+  }
+
+:host td {
+  max-width: 320px;
+}
+
+  :host ::ng-deep .mat-mdc-header-cell {
+      font-family: var(--table-main-font);
+      background-color: var(--table-primary-color) !important;
+      color: var(--table-secondary-color);
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 0.11px;
+  }
+  
+  :host ::ng-deep .mat-mdc-row, .mdc-data-table__content {
+      height: 52px !important; //the row height
+      font-family: var(--main-font);
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0.25px;
+      
+  }
+  
+
+  .country-icon-box {
+      display: flex;
+      width: 58px;
+      height: 20px;
+      border-radius: 50rem;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .country-icon-box img{
+      width: 20px;
+      height: 20px;
+      object-fit: fill;
+      border-radius: 50rem;
+  }
+  
+  
+  .mat-mdc-row:hover{
+    background-color: whitesmoke;
+    cursor: pointer;
+  }
+  
+  //** Mat Menu
+  :host ::ng-deep .mat-mdc-menu-panel .mat-mdc-menu-content {
+    padding: 0;
+  }
+  
+  :host ::ng-deep .mat-mdc-menu-panel .mat-mdc-menu-content .mat-mdc-menu-item .mat-mdc-menu-item-text {
+    font-family: var(--main-font);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    
+  }
+  
+  :host ::ng-deep .mat-menu {
+    background-color: white;
+  }
+  
+
+  // ** Paginator
+  .paginator-box {
+    margin: 5px;
+  }
+  
+  :host ::ng-deep .mat-mdc-paginator-container, .paginator-box, .paginator-panel {
+    justify-content: end !important;
+    background-color: transparent;
+  }
+  
+  .paginator-panel {
+    width: 100%;
+  }

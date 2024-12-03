@@ -1,0 +1,123 @@
+:host {
+    --toolbar-background-color: white;
+    --toolbar-height: 102px;
+    --toolbar-border-color: #E8E8E8;
+    --toolbar-user-role-text-color: #A4A4A4;
+    --toolbar-font: Product Sans;
+}
+
+
+mat-toolbar {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--toolbar-background);
+    height: var(--toolbar-height);
+    width: 100%;
+    border-bottom: 1px solid var(--toolbar-border-color);
+}
+
+
+// ** Menu button and project logo container (left block)
+#navigation-item-container-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-text {
+    font-size: 25px;
+    font-weight:900;
+    text-align: center;
+    align-content: center;
+}
+
+// ** Spacer to align boxes properly
+#spacer {
+    flex: 1 1 auto;
+  }
+
+
+// ** Profile info container box 
+
+::ng-deep #notifications-icon {
+    margin-top: 0;
+    padding-left: 0;
+    align-content: start;
+    text-align: left;
+    font-size:30px;
+    
+    mat-icon {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+        z-index: 10000;
+    }
+
+}
+
+#profile-info-container-box {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    gap: 10px;
+
+    .notifications-button {
+        width: 42px;
+        height: 42px;
+        margin: 0;
+        padding: 0;
+        align-content: center;
+        text-align: center;
+    }
+
+    .profile-icon-button {
+        width: 52px;
+        height: 52px;
+        border: 1px solid transparent;
+        border-radius: 50rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .mdc-button {
+        min-width: 55px;
+        min-height: 55px;
+    }
+
+
+    .profile-pic {
+        vertical-align: middle;
+        width: 52px;
+        height: 52px;
+        border-radius: 50rem;
+        object-fit: cover;
+    }
+
+    .username-box {
+        display: flex;
+        flex-direction: column;
+        text-align: left; 
+    }
+
+    .username {
+        font-family: var(--toolbar-font);
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21.83px;
+        letter-spacing: 0.01em;
+        text-align: left;
+
+    }
+
+    .role {
+        font-family: var(--toolbar-font);
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 15.77px;
+        letter-spacing: 0.01em;
+        text-align: left;
+        color: var(--toolbar-user-role-text-color)
+    }
+}
+
+

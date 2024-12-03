@@ -1,0 +1,42 @@
+[
+    {
+      "type_name": "Annual Leave",
+      "validity": "Unlimited",
+      "status": "Active"
+    },
+    {
+      "type_name": "Sick Leave",
+      "validity": "Limited",
+      "status": "Active"
+    },
+    {
+      "type_name": "Maternity Leave",
+      "validity": "Limited",
+      "status": "Draft"
+    },
+    {
+      "type_name": "Paternity Leave",
+      "validity": "Limited",
+      "status": "Ready"
+    },
+    {
+      "type_name": "Bereavement Leave",
+      "validity": "Limited",
+      "status": "Inactive"
+    },
+    {
+      "type_name": "Unpaid Leave",
+      "validity": "Unlimited",
+      "status": "Active"
+    },
+    {
+      "type_name": "Casual Leave",
+      "validity": "Limited",
+      "status": "Ready"
+    },
+    {
+      "type_name": "Study Leave",
+      "validity": "Unlimited",
+      "status": "Inactive"
+    }
+  ]

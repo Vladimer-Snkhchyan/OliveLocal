@@ -1,0 +1,50 @@
+<mat-toolbar>
+
+    <div id="navigation-item-container-box">
+        <button mat-icon-button aria-label="Menu button" (click)="toggleSidenav.emit()">
+            <mat-icon>menu</mat-icon>
+        </button>
+
+        <span id="logo-text"><img src="./assets/logos/OLIVE.svg"></span>
+    </div>
+
+
+    <span id="spacer"></span>
+
+    <div id="profile-info-container-box">
+
+        <button mat-icon-button class="notifications-button" appearance="outline">
+            <mat-icon id="notifications-icon">notifications_none</mat-icon>
+        </button>
+
+
+        <button mat-button [matMenuTriggerFor]="accountMenu" class="profile-icon-button" appearance="outline">
+            <img src="./assets/profile-images/image_1.png" alt="Profile" class="profile-pic" />
+        </button>
+
+        <mat-menu xPosition="before" #accountMenu="matMenu">
+            <button mat-menu-item>
+                <mat-icon>person</mat-icon>
+                <span>Profile</span>
+            </button>
+            <button mat-menu-item>
+                <mat-icon>settings</mat-icon>
+                <span>Settings</span>
+            </button>
+            <button mat-menu-item>
+                <mat-icon>logout</mat-icon>
+                <span>Logout</span>
+            </button>
+        </mat-menu>
+
+
+        <div class="username-box">
+            <span class="username">Gavano</span>
+            <span class="role">HR Manager</span>
+        </div>
+        
+
+
+    </div>
+
+</mat-toolbar>

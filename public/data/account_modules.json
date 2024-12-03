@@ -1,0 +1,46 @@
+[
+  {
+    "account_id": 1,
+    "modules": [
+      { "module_name": "Onboarding", "enroll_modules": "Active" },
+      { "module_name": "Attendance", "enroll_modules": "Inactive" }
+    ]
+  },
+  {
+    "account_id": 2,
+    "modules": [
+      { "module_name": "Leaves", "enroll_modules": "Active" },
+      { "module_name": "Payroll", "enroll_modules": "Inactive" }
+    ]
+  },
+  {
+    "account_id": 3,
+    "modules": [
+      { "module_name": "Compliance", "enroll_modules": "Active" },
+      { "module_name": "Recruitment", "enroll_modules": "Inactive" }
+    ]
+  },
+  {
+    "account_id": 4,
+    "modules": [
+      { "module_name": "Attendance", "enroll_modules": "Active" },
+      { "module_name": "Onboarding", "enroll_modules": "Inactive" },
+      { "module_name": "Payroll", "enroll_modules": "Active" }
+    ]
+  },
+  {
+    "account_id": 5,
+    "modules": [
+      { "module_name": "Leaves", "enroll_modules": "Inactive" },
+      { "module_name": "Recruitment", "enroll_modules": "Active" }
+    ]
+  },
+  {
+    "account_id": 6,
+    "modules": [
+      { "module_name": "Onboarding", "enroll_modules": "Active" },
+      { "module_name": "Compliance", "enroll_modules": "Active" },
+      { "module_name": "Attendance", "enroll_modules": "Inactive" }
+    ]
+  }
+]

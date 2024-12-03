@@ -1,0 +1,35 @@
+<app-breadcrumbs [allRoutes]="breadcrumbLinks"></app-breadcrumbs>
+
+<hr>
+
+<div class="page-header">
+
+    <span class="page-header-text">Rules Engine</span>
+
+    <div class="filtering-container">
+
+        <mat-form-field appearance="outline">
+            <input matInput type="search" placeholder="Search">
+            <button matPrefix mat-icon-button aria-label="Search">
+                <mat-icon>search</mat-icon>
+            </button>
+        </mat-form-field>
+
+        <button mat-stroked-button>
+            <span>Filter</span>
+            <span id="filter-icon-box"><img src="./assets/other-icons/icon-park_setting-config.png"></span>
+        </button>
+    </div>
+
+</div>
+
+
+
+<div class="table">
+    @if (allRules.length > 0) {
+    <app-shared-table class="table" [tableColumns]="RuleTableColumns" [tableData]="allRules"
+        [itemClickDestination]="itemClickDestination">
+    </app-shared-table>
+    }
+
+</div>

@@ -1,0 +1,80 @@
+[
+    {
+      "rule_name": "Mandatory Onboarding Checklist",
+      "module": "Onboarding",
+      "country": "United States of America",
+      "status": "Active"
+    },
+    {
+      "rule_name": "Annual Leave Policy",
+      "module": "Leaves",
+      "country": "Canada",
+      "status": "Ready"
+    },
+    {
+      "rule_name": "Flexible Attendance Hours",
+      "module": "Attendance",
+      "country": "Australia",
+      "status": "Draft"
+    },
+    {
+      "rule_name": "Holiday Leave Accrual",
+      "module": "Leaves",
+      "country": "United Kingdom",
+      "status": "Active"
+    },
+    {
+      "rule_name": "Attendance Tracking Requirement",
+      "module": "Attendance",
+      "country": "India",
+      "status": "Inactive"
+    },
+    {
+      "rule_name": "New Hire Orientation",
+      "module": "Onboarding",
+      "country": "Germany",
+      "status": "Ready"
+    },
+    {
+      "rule_name": "Leave Encashment Policy",
+      "module": "Leaves",
+      "country": "South Africa",
+      "status": "Draft"
+    },
+    {
+      "rule_name": "Remote Attendance Rules",
+      "module": "Attendance",
+      "country": "Japan",
+      "status": "Active"
+    },
+    {
+      "rule_name": "Cultural Sensitivity Onboarding",
+      "module": "Onboarding",
+      "country": "Saudi Arabia",
+      "status": "Ready"
+    },
+    {
+      "rule_name": "Special Leave for National Holidays",
+      "module": "Leaves",
+      "country": "China",
+      "status": "Inactive"
+    },
+    {
+      "rule_name": "Onboarding Digital Training",
+      "module": "Onboarding",
+      "country": "Netherlands",
+      "status": "Draft"
+    },
+    {
+      "rule_name": "Attendance Penalty Rules",
+      "module": "Attendance",
+      "country": "Russia",
+      "status": "Active"
+    },
+    {
+      "rule_name": "Vacation Request Deadline",
+      "module": "Leaves",
+      "country": "Brazil",
+      "status": "Ready"
+    }
+  ]

@@ -1,0 +1,66 @@
+<mat-sidenav-container class="sidenav-container" autosize>
+
+  <mat-sidenav [style.width]="sidenavWidth" class="sidnav" #sidenav  mode="side" opened>
+
+    <mat-nav-list class="navigation-list">
+
+        <button mat-button  routerLink="/dashboard" routerLinkActive="selected-menu-item"> 
+          <div class="select-left-indicator"></div>
+          <span [style.margin-right]="sidenavIconMargin" class="nav-button-icon-box">
+            <span *ngIf(active) class="nav-button-selected-flag "></span>
+            <img src="./assets/navigation-icons/Dashboard.png"> 
+          </span>
+          <span class="nav-button-text">Dashboard</span>
+         </button>
+
+        <button mat-button routerLink="/rules-engine" routerLinkActive="selected-menu-item">
+          <span class="select-left-indicator"></span>
+          <span [style.margin-right]="sidenavIconMargin" class="nav-button-icon-box">
+            <img src="./assets/navigation-icons/Orders.png">
+          </span>
+          <span class="nav-button-text">Rules Engine</span>
+        </button>
+      
+        <button  mat-button routerLink="/accounts" routerLinkActive="selected-menu-item">
+          <span class="select-left-indicator"></span>
+          <span [style.margin-right]="sidenavIconMargin" class="nav-button-icon-box">
+            <img src="./assets/navigation-icons/Products.png">
+          </span>
+          <span class="nav-button-text">Accounts</span>
+        </button>
+      
+        <button mat-button routerLink="/billing" routerLinkActive="selected-menu-item">
+          <span class="select-left-indicator"></span>
+          <span [style.margin-right]="sidenavIconMargin" class="nav-button-icon-box">
+            <img src="./assets/navigation-icons/Analytics.png">
+          </span>
+          <span class="nav-button-text">Billing</span>
+        </button>
+     
+        <button mat-button routerLink="/user-management" routerLinkActive="selected-menu-item">
+          <span class="select-left-indicator"></span>
+          <span [style.margin-right]="sidenavIconMargin" class="nav-button-icon-box">
+            <img src="./assets/navigation-icons/Customers.png">
+          </span>
+          <span class="nav-button-text">User Management</span>
+        </button>
+      
+        <button mat-button routerLink="/settings" routerLinkActive="selected-menu-item">
+          <span class="select-left-indicator"></span>
+          <span [style.margin-right]="sidenavIconMargin" class="nav-button-icon-box">
+            <img src="./assets/navigation-icons/Settings.png">
+          </span>
+          <span class="nav-button-text">Settings</span>
+        </button>
+     
+        
+
+    </mat-nav-list>
+
+  </mat-sidenav>
+
+  <mat-sidenav-content [style.margin-left]="sidenavWidth">
+    <ng-content></ng-content>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>

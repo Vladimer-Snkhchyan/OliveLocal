@@ -1,0 +1,43 @@
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    @for (column of tableColumns; track column) {
+    <ng-container [matColumnDef]="column.columnDef">
+        <th class='column-header' mat-header-cell *matHeaderCellDef> {{column.header}} </th>
+        <td class='column-entity' mat-cell *matCellDef="let element">
+            @if(column.isImage) {
+            <div class="country-icon-box">
+                <img [src]="column.cell(element)" />
+            </div>
+            }
+            @else if (column.isAction) {
+            <mat-icon mat-icon-button [matMenuTriggerFor]="actionMenu" class="action-icon" aria-hidden="false"
+                (click)="preventRowClicking($event)" fontIcon="more_vert"></mat-icon>
+
+            <mat-menu class="mat-menu" xPosition="before" #actionMenu="matMenu">
+                @if (column.actions?.edit) { <button class="matMenuButton" (click)="onActionEdit()"
+                    mat-menu-item>Edit</button>}
+                @if (column.actions?.deactivate) { <button class="matMenuButton" (click)="onActionDeactivate()"
+                    mat-menu-item>Deactivate</button>}
+                @if(column.actions?.auditTrial) {<button class="matMenuButton" mat-menu-item
+                    (click)="onActionAuditTrial(element[column.actions?.auditTrial?.track], column.actions?.auditTrial?.route)">Audit
+                    Trial</button>}
+                @if (column.actions?.cancel) { <button class="matMenuButton" mat-menu-item>Cancel</button>}
+            </mat-menu>
+
+            }
+            @else { {{column.cell(element)}} }
+        </td>
+    </ng-container>
+    }
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+
+    <tr (click)="navigate(row)" mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+
+
+
+<div class="paginator-box">
+    <mat-paginator class='paginator-panel' [length]="list_length" [pageSize]="page_size"
+       [hidePageSize]="true" [pageSizeOptions]='[]' [showFirstLastButtons]="false" [pageIndex]="current_page"
+        (page)="handlePageEvent($event)">
+    </mat-paginator>
+</div>
